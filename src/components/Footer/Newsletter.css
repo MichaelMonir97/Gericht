@@ -1,0 +1,67 @@
+.app__newsletter{
+    border: 1px solid var(--color-golden);
+    padding: 2rem 4rem;
+    background-color: var(--color-black);
+    text-align: center;
+    position: relative;
+
+}
+
+
+.app__newsletter-heading > img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    left: 40px;
+}
+
+.app__newsletter-heading p:last-child {
+    color: #aaa;
+    margin-top: 1rem;
+}
+.app__newsletter-input{
+    display: grid;
+    grid-template-columns: 12fr 3fr;
+    gap: 25px;
+    margin-top: 2rem;
+}
+@media (max-width:768px) {
+    .app__newsletter{
+        padding: 0.5rem 2rem;
+    }
+    .app__newsletter-input{
+        grid-template-columns: 1fr;
+
+    }
+
+    .app__newsletter-input button{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .app__newsletter-heading > img{
+        width: 80px;
+        height: 80px;
+        top: -40px;
+        left: 10px;
+    }
+}
+.app__newsletter-input input{
+    background-color: var(--color-black);
+    border: 1px solid var(--color-golden);
+    padding: 25px 30px;
+    color: #aaa;
+    border-radius: 3px ;
+}
+
+.app__newsletter-input input:focus{
+    outline: none;
+}
+.app__newsletter-input input::placeholder{
+    transition: 0.5s ease;
+}
+
+.app__newsletter-input input:focus::placeholder{
+    opacity: 0;
+}
