@@ -31,21 +31,21 @@ const Header = () => {
   }, [info.length]);
 
   return (
-    <div className='app__header app__wraper section__padding' id='home'>
+    <div className="app__header app__wrapper section__padding" id='home'>
 
       {info.map((object, index) => (
         <div
           key={index}
-          className={"app__wraper__info " + (index === activeIndex ? 'active' : '')}
+          className={"app__wrapper_info" + (index === activeIndex ? 'active' : '')}
         >
           <div>
           <SubHeading title={object.title} />
-          <h1 className='app__header-h1'>{object.h1}</h1>
+          <h1 className="app__header-h1">{object.h1}</h1>
           <p className='p__opensans' style={{margin: '2em 0'}}>{object.p}</p>
           <button className='custom__button'>Explore Menu</button>
           </div>
 
-          <div className='app__wraper__img'>
+          <div className="app__wrapper_img">
         <img src={object.img} alt='welcome img'/>
         </div>
 
